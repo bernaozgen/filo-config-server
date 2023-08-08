@@ -9,8 +9,4 @@ server:
     port: 9001
 spring:
     application:
-        name: discovery-
-    cloud:
-       config:
-          enabled: true
-          
+        name: discovery-server
