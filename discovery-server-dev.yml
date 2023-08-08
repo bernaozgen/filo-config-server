@@ -6,7 +6,7 @@ eureka:
     instance:
         hostname: localhost
 server:
-    port: 9001
+    port: 8761
 spring:
     application:
         name: discovery-server
