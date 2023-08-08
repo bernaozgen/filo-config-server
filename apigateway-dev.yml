@@ -1,25 +1,19 @@
-spring:
-  application:
-    name: api-gateway
-    
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka:password@localhost:8761/eureka
-  app:
-    eureka-server: localhost
-
-management:
-  zipkin:
-    tracing:
-      endpoint: http://localhost:9411/api/v2/spans
-  tracing:
-    sampling:
-      probability: 1.0
-  endpoints:
-    web:
-      exposure:
-        include: prometheus
-
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8080/eureka/
+    instance:
+        prefer-ip-address: true
 server:
-  port: 9010
+    port: 9010
+spring:
+    application:
+        name: api-gateway
+    cloud:
+        gateway:
+            discovery:
+                locator:
+                    enabled: true
+                    lower-case-service-id: true
