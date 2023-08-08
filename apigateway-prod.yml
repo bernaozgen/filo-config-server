@@ -3,14 +3,14 @@ eureka:
         fetch-registry: true
         register-with-eureka: true
         service-url:
-            defaultZone: http://localhost:8080/eureka/
+            defaultZone: http://localhost:9001/eureka/
     instance:
         prefer-ip-address: true
 server:
     port: 9011
 spring:
     application:
-        name: apigateway
+        name: api-gateway
     cloud:
         gateway:
             discovery:
