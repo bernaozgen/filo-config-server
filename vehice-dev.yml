@@ -1,6 +1,6 @@
 spring:
   application:
-    name: inventory
+    name: vehice
   datasource:
     password: 123456
     url: jdbc:postgresql://localhost:5432/aracfiloinventorydb
@@ -16,7 +16,6 @@ spring:
           validation:
             mode: none
     show-sql: true
-    
 
 eureka:
   client:
@@ -29,5 +28,3 @@ eureka:
     prefer-ip-address: true
 server:
   port: 0
-
-  
