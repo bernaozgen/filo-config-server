@@ -1,9 +1,9 @@
 spring:
   application:
-    name: inventory
+    name: company
   datasource:
     password: 123456
-    url: jdbc:postgresql://localhost:5432/aracfiloinventorydb
+    url: jdbc:postgresql://localhost:5432/aracfilocompanydb
     username: postgres
   jpa:
     hibernate:
@@ -29,5 +29,3 @@ eureka:
     prefer-ip-address: true
 server:
   port: 0
-
-  
